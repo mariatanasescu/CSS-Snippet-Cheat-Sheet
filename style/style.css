@@ -1,0 +1,56 @@
+* {
+    background-color: #413e3e;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    /* would :root be more appropriate? if so, why?*/
+}
+h1, h2, h3 {
+    color: darkorchid;
+}
+p {
+    font-size: smaller;
+}
+pre {
+    font-size: smaller;
+}
+.all {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.group {
+    max-width: 300px;
+    /* how do I make all flexboxes the same size that fits the contents withut specifyong the numebr of pixels?*/
+    border: 1px dashed white;
+    /*padding: 1em;*/
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    flex: 0;
+}
+pre {
+    display: block;
+    padding: 10px;
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%
+    rgba(232, 102, 236, 0.6) 100%
+);
+}
+h2 {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.groupParagraph {
+    margin: 5px;
+    color: darkorchid;
+}
+/* Hover*/
+group:hover {
+    box-shadow: inset 0px 0px 8px rgba(232,102,236, 1) , 0 0 15px rgba(232,102,236, 1);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>CSS Snippet Cheat Sheet</title>
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+     <h1 style="text-align:center"> CSS Snippet Cheatsheet</h1>
+     <p style="text-align:center">Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent hone and add it to this page! Select any snippet below and it will automatically select all of the code for you to copy.</p>
+    </header>
+    <main class="all">
+      <!--Do I need another section/div for each ''card''?-->
+      <section id="first" class="group">
+        <h2>Flexbox Row</h2>
+        <p class="groupParagraph">Use these three properties to create a flexbox row layout.</p>
+        <pre>.row {
+  dislay: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}  
+        </pre>
+    </section>
+    <section id="second" class="group">
+        <h2>Flexbox Column</h2>
+        <p class="groupParagraph">Use this to create a Flexbox column layout.</p>
+        <pre>.column {
+  dislay: flex;
+  flex-direction: column;
+}  
+        </pre>
+    </section>
+    <section id="third" class="group">
+        <h2>CSS Grid Layout</h2>
+        <p class="groupParagraph">Build a 12 column layout using CSS grid.</p>
+        <pre>.column {
+  dislay: flex;
+  flex-direction: column;
+}  
+        </pre>
+    </section>
+    <section id="fourth" class="group">
+        <h2>Linear Gradients</h2>
+        <p class="groupParagraph">This will create a background linear gradient from top to bottom</p>
+        <pre>.linear-gradient-background {
+  background-image: linear-gradient (
+    rgba(232, 102, 236, 0.3) 0%
+    rgba(232, 102, 236, 0.6) 100%  
+  );
+}  
+        </pre>
+    </section>
+    <section id="fifth" class="group">
+        <h2>Box Transition Glow</h2>
+        <p class="groupParagraph">Use transition and box shadow to glow on hover</p>
+        <pre>.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}  
+
+.code-card:hover ,
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1)0 0 15px
+    rgba(232, 102, 236, 1);
+}
+        </pre>
+    </section>
+    <section id="sixth" class="group">
+        <h2>Overlay Card With Title</h2>
+        <p class="groupParagraph">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+        <pre>.card-header {
+  position: relative;
+  margin-top: -20px;
+}  
+        </pre>
+    </section>
+  </main>
+    <footer>
+        <h3 style="text-align:center">Made with love and CSS</h3>
+    </footer>
+</body>
+</html>
